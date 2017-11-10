@@ -12,7 +12,6 @@
 Tecrübeli Önyüz geliştiricilerinin deneyimi ve zamanla gelecek olan bazı açık kaynak gereksinim listelerini temel alır.
 
 *Product Hunt üzerindeki Oylama ve Tavsiye ile Önyüz Gereksinim Listesini paylaşmaya yardımcı olun*
-*Help to share the Front-End Checklist by voting and recommending on Product Hunt*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
 ## İçerik Tablosu
