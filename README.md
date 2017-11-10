@@ -1,4 +1,4 @@
-# Front-End Checklist
+# Önyüz Gereksinim Listesi
 
 [![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
@@ -7,67 +7,68 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The **Front-End Checklist** is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production.
+**Önyüz Gereksinim Listesi** sahip olmanız gereken olan tüm öğelerin ayrıntılı bir listesidir / sitenizi yayınlamadan önceki test süreci / HTML dosyanızın yayın süreci.
 
-It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
+Tecrübeli Önyüz geliştiricilerinin deneyimi ve zamanla gelecek olan bazı açık kaynak gereksinim listelerini temel alır.
 
+*Product Hunt üzerindeki Oylama ve Tavsiye ile Önyüz Gereksinim Listesini paylaşmaya yardımcı olun*
 *Help to share the Front-End Checklist by voting and recommending on Product Hunt*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
-## Table of Contents
+## İçerik Tablosu
 
-1. **[Head](#head)**
+1. **[Head Etiketi](#head)**
 2. **[HTML](#html)**
-3. **[Webfonts](#webfonts)**
+3. **[Web Yazı Tipleri](#webfonts)**
 4. **[CSS](#css)**
-5. **[Images](#images)**
+5. **[Resimler](#images)**
 6. **[JavaScript](#javascript)**
-7. **[Security](#security)**
-8. **[Performance](#performance-1)**
-9. **[Accessibility](#accessibility)**
+7. **[Güvenlik](#security)**
+8. **[Performans](#performance-1)**
+9. **[Erişilebilirlik](#accessibility)**
 10. **[SEO](#seo)**
 
-## How to use?
+## Nasıl kullanılır ?
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
+**Önyüz Gereksinim Listesi** de bulunan tüm öğeler çoğu proje için gereklidir, ama bazı öğeler atlanabilir yada gerekli olmayabilir (Mesela bir yönetim uygulamasında RSS'e ihtiyacınız olmayabilir) burada seçeceğimiz 3 adet seviye var bunlar;
 
-* ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
-* ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-* ![High][high_img] means that the item **can't be omitted** by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* ![Düşük][low_img] **Tavsiye Edilen** anlamına gelir ama bazı özel durumlarda atlanabilir.
+* ![Orta][medium_img] **Şiddetle Tavsiye Edilen** gerçekten özel durumlarda atlanabilir ama bazı öğeler atlanırsa performans veya SEO açısından kötü etkilere neden olabilir.
+* ![Yüksek][high_img] **Atlanılamaz** herhangi bir sebepten ötürü atlanılamaz anlamına gelir.Sayfanızı erişime kapatabilir yada fonksiyon çalışmalarını engelleyebilir yada SEO konusunda kötü etkilere neden olabilirsiniz.
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+Bazı kaynaklar bir emojiye sahip olur bu sizin konuyu daha rahat anlamanıza yardımcı olacaktır.Bunlardan bir kaçını aşağıda görebilirsiniz.
 
-* 📖: documentation or article
-* 🛠: online tool / testing tool
-* 📹: media or video content
+* 📖: belge veya makale
+* 🛠: çevrimiçi araç / test aracı
+* 📹: medya yada video
 
 ---
 
-## Head
+## Head Etiketi
 
-> **Notes:** You can find [a list of everything](https://github.com/joshbuchea/HEAD) that could be found in the `<head>` of an HTML document.
+> **Notlar:** Bir HTML dökümanının `<head>` bölümünde bulunabilecek [her şeyin listesi](https://github.com/joshbuchea/HEAD) burada göreceğiz.
 
-### Meta tag
+### Meta etiketi
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] Doctype HTML5 öğesidir ve tüm HTML sayfalarının en üstünde bulunur.
 
 ```html
 <!-- Doctype HTML5 -->
 <!doctype html>
 ```
 
-> * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+> * 📖 [Karakter kodlamasını belirlemek - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
+*Gelecek 3 meta etiketi (Charset, X-UA Compatible and Viewport) head etiketinde her şeyden önce tanımlanmalı*
 
-* [ ] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] Karakter seti (UTF-8) olarak doğru bir şekilde tanımlandı.
 
 ```html
 <!-- Set character encoding for the document -->
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] The X-UA-Compatible meta tag is present.
+* [ ] **X-UA-Compatible:** ![Medium][medium_img]  X-UA-Compatible etiketi tanımlandı.
 
 ```html
 <!-- Instruct Internet Explorer to use its latest rendering engine -->
